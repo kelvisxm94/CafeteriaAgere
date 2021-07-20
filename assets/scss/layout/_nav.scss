@@ -1,0 +1,12 @@
+.nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 800px) {
+    .nav{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,98 @@
+.sectionOne{
+    position: relative;
+    height: 400px;
+    .contentOne{
+        width: 70%;
+        float: left;
+        position: relative;
+        .contentBox{
+            display: flex;
+            width: 360px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color: #EEEDED;
+            box-sizing: border-box;
+            padding: 0 10px;
+        }
+        &__image{
+            width: 100%;
+            height: 400px;
+        }
+    }
+    .contentTwo{
+        width: 30%;
+        float: right;
+        height: 400px;
+        box-sizing: border-box;
+        padding: 40px;
+        position: relative;
+        &__title{
+            font-size: $xxx-large;
+            font-family: $fuente-mono;
+            @include font-weight(regular);
+            margin: 0;
+        }
+        &__review{
+            font-size: $large;
+            font-family: $fuente-roboto;
+            @include font-weight(light);
+        }
+        &__content{
+            background-color: $flame;
+            width: 65px;
+            height: 65px;
+            position: absolute;
+            bottom: 10px;
+            left: -10px;
+        }
+    }
+}
+.contenedor{
+    margin: 0 10px;
+    &__title{
+        margin: 10px 0;
+        font-family: $fuente-mono;
+        font-size: $xx-large;
+        @include font-weight(regular);
+    }
+    &__paragraph{
+        font-family: $fuente-roboto;
+        font-size: $medium;
+        @include font-weight(light);
+    }
+}
+.imagen2{
+    padding: 18px;
+    width: 30px;
+    height: 30px;
+}
+.bgYellow{
+    background-color: $buff;
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    bottom: -10px;
+    left: 10px;
+    z-index: -2;
+}
+
+@media (max-width: 800px) {
+    .sectionOne{
+        height: 600px;
+        .contentOne{
+            width: 100%;
+            float: none;
+        }
+        .contentTwo__content{
+            display: none;
+        }
+        .contentTwo{
+            width: 100%;
+            float: none;
+            padding: 30px;
+            text-align: center;
+            height: auto;
+        }
+    }
+}

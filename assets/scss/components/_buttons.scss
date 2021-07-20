@@ -1,0 +1,50 @@
+.navButtons{
+    display: initial;
+    &__iniciar{
+        display: inline-block;
+        width: 180px;
+        text-align: center;
+        font-size: $medium;
+        font-family: $fuente-mono;
+        border: 1px solid $quick-silver;
+        color: $quick-silver;
+        @include decoration();
+        @include font-weight(regular);
+        padding: 10px;
+        margin: 0 10px;
+        &:hover{
+            color: $black;
+            border-color: $black;
+        }
+    }
+    &__registrar{
+        display: inline-block;
+        width: 180px;
+        text-align: center;
+        font-size: $medium;
+        font-family: $fuente-mono;
+        background-color: $shiny-shamrock;
+        color: $white;
+        @include decoration();
+        @include font-weight(regular);
+        padding: 11px;
+        margin: 0 10px;
+        &:hover{
+            color: $outer-space;
+            background-color: $turquoise-green;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .navButtons{
+        display: flex;
+        flex-direction: column;
+        &__iniciar{
+            margin: 10px 0;
+        }
+        &__registrar{
+            margin: 0;
+        }
+    }
+}

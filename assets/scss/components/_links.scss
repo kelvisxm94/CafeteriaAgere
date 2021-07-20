@@ -1,0 +1,14 @@
+.navLink{
+    padding: 0 15px;
+    &__link{
+        font-size: $large;
+        font-family: $fuente-mono;
+        color: $quick-silver;
+        @include decoration();
+        @include font-weight(regular);
+        padding: 0 10px;
+        &:hover{
+            color: $black;
+        }
+    }
+}
